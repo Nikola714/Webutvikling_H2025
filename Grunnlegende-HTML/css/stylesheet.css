@@ -4,7 +4,9 @@
 
 }
 
-
+*{
+    box-sizing: border-box;
+}
 
 body{
     font-family: Arial, Helvetica, sans-serif;
@@ -43,8 +45,51 @@ a{
 }
 
 .deal-section{
-    background-color: var(--basic-grey);
+
+    background-image: url("https://picsum.photos/800/500?grayscale");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+    background-color: var(--basic-grey); 
     padding: 1rem;
+    position: relative;
+    height: 50vh;
+    min-height: 200px;
+/* 
+    img{
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+    
+    h2, p, a{
+        position: absolute;
+    }
+
+    p{
+        top: 63px;
+    }
+
+    a{
+        top:160px;
+    } */
+}
+
+
+main{
+    max-width: 1200px;
+    width: 100%;
+    margin: 1rem auto;
+
+
+    section{
+        h2{
+            text-align: center;
+        }
+        article{
+            margin: 0 auto;
+        }
+    }
 }
 
 
@@ -69,4 +114,32 @@ article{
     color: #fff;
     padding: 1rem;
     border: none;
+}
+
+
+.side-container{
+    background-color: var(--basic-grey);
+    padding: 1rem;
+
+    form{
+        input{
+            display: block;
+            padding: 1rem;
+            margin: 0.4rem 0;
+        }
+    }
+}
+
+.age-check{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+
+footer{
+    background-color: #212428;
+    color: #fff;
+    padding: 1rem;
+    min-height: 150px;
 }
