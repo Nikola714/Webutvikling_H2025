@@ -1,0 +1,87 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif
+}
+
+body{
+    margin: 0;
+}
+
+header,h1, main, aside, footer{
+    padding: 1rem;
+}
+
+#mainlogo{
+    text-transform: uppercase;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #ffffff;
+
+}
+
+
+#global-header{
+    background-image: url("https://fastly.picsum.photos/id/22/4434/3729.jpg?hmac=fjZdkSMZJNFgsoDh8Qo5zdA_nSGUAWvKLyyqmEt2xs0");
+    background-size: cover;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    
+
+    nav{
+        background-color: #fff;
+        border: 1px solid #adadad;
+    ul{
+        li{
+            list-style: none;
+            padding: 0.4rem;
+        }
+    }
+    }
+}
+
+article{
+    border: 1px solid #adadad;
+    padding: 1rem;
+    margin: 1rem 0 1rem 0;
+}
+
+aside a{
+    color: #000;
+    text-decoration: none;
+}
+
+#footer{
+    color: #fff;
+    background-color: #adadad;
+    padding: 1rem;
+    margin-top: 1rem;
+
+    form{
+        padding: 1rem;
+        
+
+        label{
+            
+
+        }
+        input{
+            padding: 1rem;
+            width: 100%;
+            margin: 0.5rem 0 0.5rem 0;
+    
+        }
+        textarea{
+            width: 100%;
+        }
+        .btn{
+            width: 170px;
+            justify-content: flex-start;
+            background-color: #000000;
+            color: #fff;
+        }
+    }
+
+}
