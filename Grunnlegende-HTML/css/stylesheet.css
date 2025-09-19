@@ -212,3 +212,45 @@ footer{
         grid-row-end: 5;
     }
 }
+
+.flex-container{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    justify-content: center;
+
+    h2{
+        width: 100%;
+    }
+
+    article{
+        min-width: 200px !important;
+        margin: 0;
+        flex-grow: 1;
+    }
+}
+
+section.flex-grow{          /*spesifiser hvor ligger den class, jo inn i section html tagg*/
+    justify-content: flex-start;
+
+    article{ 
+        max-width: 900px;
+        min-width: 100px;
+        width: 31%;         /*33% av container, altså flex-grow*/
+    }
+
+    article.grow-1{
+        .grow-1{
+    flex-grow: 2;
+}
+    }
+}
+
+
+.grow-1{
+    flex-grow: 2;
+}
+
+.grow-2{
+    flex-grow: 3;
+}
