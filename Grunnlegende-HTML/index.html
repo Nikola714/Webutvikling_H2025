@@ -3,7 +3,17 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--stilarker med fonter og ikoner fra fonts awesome-->
+      <link href="icons/css/fontawesome.css" rel="stylesheet" />
+      <link href="icons/css/brands.css" rel="stylesheet" />
+      <link href="icons/css/solid.css" rel="stylesheet" />
+      <link href="icons/css/sharp-thin.css" rel="stylesheet" />
+      <link href="icons/css/sharp-duotone-thin.css" rel="stylesheet" />
+
+    <!-- min stilark må vare sist slik at den kan overskiver de stilarket for eksempl med ikoner og fonter-->
     <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
+
     <title>Forside - DataSpæll</title>
   </head>
 
@@ -16,6 +26,9 @@
         <ul>
           <li><a href="index.html">Hjem</a></li>
           <li><a href="products.html">Produkter</a></li>
+
+          <li><i class="fa-solid fa-magnifying-glass"></i></li> <!--ikon for å søke "search"-icon -->
+          <li><i class="fa-solid fa-bars"></i></li> <!--hamburger icon-->
         </ul>
       </nav>
     </header>
@@ -28,10 +41,10 @@
     </section>
 
     <main>
-      <section class="flex-container flex-grow">
+      <section class="flex-container flex-grow"> <!--to klasser en heter "flex-container" og andre hater "flex-grow"-->
         <h2>Populære Spæll</h2>
 
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -39,7 +52,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
         
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -47,7 +60,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
 
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -55,7 +68,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
 
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -63,7 +76,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
 
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -71,7 +84,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
 
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -79,7 +92,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
 
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -87,7 +100,7 @@
           <a href="product.html" class="btn">Se produkt</a>
         </article>
 
-        <article>
+        <article class="product-card">
           <img src="https://picsum.photos/200/300?grayscale" alt="Red dead redemition">
           <h3>Red dead Redemption</h3> 
           <p>Lorem ipsum dolor sit amet, consectetur</p>
@@ -100,19 +113,19 @@
       <section class="flex-container flex-grow"> <!--lagger to ulike klaser-->
         <h2>Kategorier</h2>
         
-        <article class="grow-1">
+        <article class="grow-1 category-card">
           <h3><a href="action.html">Action</a></h3>
         </article>
 
-        <article>
+        <article class="category-card">
           <h3><a href="nintendo.html">Nintendo</a></h3>
         </article>
 
-        <article>
+        <article class="category-card">
           <h3><a href="rollespill.html">Rollespill</a></h3>
         </article>
 
-        <article class="grow-2">
+        <article class="grow-2 category-card">
           <h3><a href="fantasy.html">Fantasy</a></h3>
         </article>
 
