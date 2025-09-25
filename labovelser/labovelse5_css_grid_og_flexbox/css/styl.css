@@ -11,11 +11,14 @@ body{
     display: grid;
     /* grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr; */
-    grid-template-columns: 2fr 2fr 1fr;
+    grid-template-columns: 1.5fr 1.5fr 1fr;
     grid-template-areas: "header header header"
                         "main main aside"
                         "footer footer footer";
+}
 
+header nav ul{
+    display: flex;
 }
 
 /*Felles*/
@@ -68,17 +71,29 @@ main, aside{
 main{
     /* grid-column: 1 / 2; */
     grid-area: main;
+    /* display: flex;
+    flex-wrap: wrap; */
+}
+main section{       /*section skal vare flex-container for articler slik at jeg kan justere articler elementer*/
     display: flex;
+    justify-content: space-between;
     flex-wrap: wrap;
+}   
 
-    
+main section h1{
+    width: 100%;
 }
 main section article{
     border: 1px solid #adadad;
     padding: 1rem;
-    margin: 1rem 0 1rem 0;
-
+    margin: 1rem 1rem 1rem 0;
+    width: 20%;
+    height: 100%;
+    min-width: 170px;
+    max-width: 506px;
+    flex-grow: 1;
 }
+
 
 
 
@@ -86,6 +101,10 @@ main section article{
 aside{
     /* grid-column: 2 / 4; */
     grid-area: aside;
+    min-width: 233px;
+
+    
+    /* margin: 2rem; */
 }
 
 aside a{
@@ -102,7 +121,13 @@ aside a{
     margin-top: 1rem;
     /* grid-column: 1 / 4; */
     grid-area: footer;
+    display: flex;
+    justify-content: space-between;
     
+    p{
+        min-width: 20%;
+
+    }
 
     form{
         padding: 1rem;
@@ -129,4 +154,24 @@ aside a{
         }
     }
 
+}
+
+
+@media only screen and (max-width: 400px){
+    .grid-container{
+    grid-template-areas: "header header header"
+                        "main main main" 
+                        "aside aside aside"
+                        "footer footer footer";
+
+    }
+    aside{
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    footer{
+        display: flex;
+        flex-wrap: wrap;
+    }
 }
