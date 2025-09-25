@@ -68,13 +68,18 @@ main, aside{
 main{
     /* grid-column: 1 / 2; */
     grid-area: main;
+    display: flex;
+    flex-wrap: wrap;
 
+    
 }
-main article{
+main section article{
     border: 1px solid #adadad;
     padding: 1rem;
     margin: 1rem 0 1rem 0;
+
 }
+
 
 
 /*ASIDE*/
